@@ -1,5 +1,4 @@
-##################### Master ICSI: Practical part ########################## 
-############# Steps to configure Social Interaction practice ###############
+# Master ICSI Practical part: Steps to configure Social Interaction practice
 
 # Choregeraphe Installation
 - Download choregraphe from: https://developer.softbankrobotics.com/us-en/downloads/pepper
