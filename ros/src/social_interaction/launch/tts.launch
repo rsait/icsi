@@ -1,0 +1,7 @@
+<launch>
+
+  <param name="audio_path" type="string" value="$(find social_interaction)/audio/"/>
+  <param name="face_topic" type="string" value="social_interaction/face_detected"/>
+  <!-- Launch TTS PC node -->
+  <node pkg="social_interaction" type="tts.py" name="tts" output="screen"/>
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+  <param name="face_topic" type="string" value="/social_interaction/face_detected"/>
+  <!-- Launch Webcam Camera node -->
+  <!--param name="camera_topic" type="string" value="/usb_cam/image_raw"/-->
+  <!--include file="$(find usb_cam)/launch/usb_cam-test.launch"/-->
+  <!-- Launch Kinect Camera node -->
+  <param name="camera_topic" type="string" value="camera/rgb/image_raw"/>
+  <include file="$(find freenect_launch)/launch/freenect.launch"/>
+  <!-- Launch Face Detection node -->
+  <node pkg="social_interaction" type="face_detection.py" name="face_detection" output="screen"/>
+</launch>

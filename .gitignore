@@ -1,0 +1,45 @@
+build/
+devel/
+install/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+ # ros related
+CATKIN_IGNORE
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+*~
+*.pyc
+
+# eclipse stuff
+.project
+.cproject
+
+/ros/src/face_recognition_opencv/data
+tensorflow

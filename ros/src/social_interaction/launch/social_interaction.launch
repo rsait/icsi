@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- Launch Face Detection node -->
+  <include file="$(find social_interaction)/launch/face_detection.launch"/>
+  <!-- Launch TTS node -->
+  <include file="$(find social_interaction)/launch/tts.launch"/>
+  <!-- Launch Cognition Controller -->
+  <node pkg="social_interaction" type="cognition_controller.py" name="cognition_controller" output="screen"/>
+</launch>

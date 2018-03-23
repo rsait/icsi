@@ -1,0 +1,9 @@
+<launch>
+  <param name="face_topic" type="string" value="/social_interaction/face_detected"/>
+  
+  <!-- Launch Robot Camera node -->
+  <param name="camera_topic" type="string" value="camera/image_raw"/>
+  <include file="$(find pepper_sensors_py)/launch/camera.launch"/>
+  <!-- Launch Face Detection node -->
+  <node pkg="social_interaction_robot" type="face_detection.py" name="face_detection" output="screen"/>
+</launch>

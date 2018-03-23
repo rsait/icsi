@@ -1,0 +1,8 @@
+<launch>
+
+  <param name="nao_ip" type="string" value="$(optenv NAO_IP 127.0.0.1)" />
+  <param name="audio_path" type="string" value="$(find social_interaction_robot)/audio/"/>
+  <param name="face_topic" type="string" value="social_interaction/face_detected"/>
+  <!-- Launch TTS robot node -->
+  <node pkg="social_interaction_robot" type="tts.py" name="tts" output="screen"/>
+</launch>
