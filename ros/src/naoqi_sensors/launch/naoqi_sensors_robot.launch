@@ -1,0 +1,8 @@
+<launch>
+
+  <param name="nao_ip" type="string" value="192.168.1.10"/>
+  <param name="bumper_topic" type="string" value="/nao_robot/sensors/bumper"/>
+  <param name="tactile_topic" type="string" value="nao_robot/sensors/tactile_touch"/>
+  <node pkg="naoqi_sensors" type="contact_memory.py" name="contact_memory" output="screen"/>
+
+</launch>

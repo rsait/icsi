@@ -10,8 +10,8 @@ from social_interaction.msg import Face
 from social_interaction.srv import SayText, SayTextRequest
 
 count = 0
-area_max = 40000
-area_min = 15000
+area_max = 10000
+area_min = 3000
 
 # Task: Control how close or far the face is from the camera
 # If the face is too close say: "You are getting too close, please move away from the camera"

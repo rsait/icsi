@@ -19,6 +19,8 @@ def cameraCallback(msg):
   try:
     # Get OpenCV Mat image from ROS image
     cv_image = CvBridge().imgmsg_to_cv2(msg, "bgr8")
+    # Resize image
+    cv_image = cv2.resize(cv_image, (320, 240)) 
     # Convert the image to gray scale
     gray = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
     # Get the list of faces detected on the image
