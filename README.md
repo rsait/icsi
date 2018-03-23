@@ -112,7 +112,7 @@
       - rostopic echo /nao_robot/sensors/bumper
       - rostopic echo /nao_robot/sensors/tactile_touch
 
-- In NAO robot:
+- With NAO robot:
   - Open a terminal:
     - export NAO_IP="your_robot_ip"
     - roslaunch naoqi_sensors naoqi_sensors_robot.launch
